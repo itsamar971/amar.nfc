@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N AMARNADH REDDY | Digital Business Card</title>
+    <meta name="description" content="Digital Business Card for N AMARNADH REDDY, Founder & CRO. Connect via Phone, Email, LinkedIn, or Portfolio.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#ffffff',
+                        'bg-gradient-start': '#ffffff',
+                        'bg-gradient-end': '#ffffff',
+                        card: '#F8F8F8',
+                        accent: {
+                            blue: '#3B82F6',
+                            cyan: '#22D3EE',
+                            lime: '#D9FF00',
+                            purple: '#8B5CF6',
+                            orange: '#F97316',
+                        },
+                        border: '#000000'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'brutal': '6px 6px 0px 0px #000000',
+                        'brutal-sm': '4px 4px 0px 0px #000000',
+                        'brutal-hover': '2px 2px 0px 0px #000000',
+                        'neon-blue': '0 0 20px rgba(59, 130, 246, 0.3)',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'glow': 'glow 4s ease-in-out infinite',
+                        'slide-up': 'slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        },
+                        glow: {
+                            '0%, 100%': { opacity: 0.5, filter: 'blur(40px)' },
+                            '50%': { opacity: 0.8, filter: 'blur(60px)' },
+                        },
+                        slideUp: {
+                            '0%': { opacity: 0, transform: 'translateY(40px)' },
+                            '100%': { opacity: 1, transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        :root {
+            --brutal-shadow: 4px 4px 0px 0px #000000;
+        }
+        body {
+            background-color: #ffffff !important;
+            background-image: 
+                linear-gradient(#e0e0e0 1px, transparent 1px), 
+                linear-gradient(90deg, #e0e0e0 1px, transparent 1px) !important;
+            background-size: 60px 60px !important;
+            -webkit-tap-highlight-color: transparent;
+            height: 100dvh;
+            width: 100vw;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .shadow-brutal {
+            box-shadow: var(--brutal-shadow);
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        .animate-slide-up {
+            animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes slideUp {
+            0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+    </style>
+</head>
+<body class="bg-white text-black h-screen overflow-hidden font-sans selection:bg-accent-lime selection:text-black flex flex-col">
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 w-full max-w-md mx-auto px-5 pt-16 pb-6 flex-1 flex flex-col justify-between">
+        
+        <!-- Hero Section - More Compact -->
+        <header class="text-center mb-4 mt-4 animate-slide-up">
+            <div class="relative inline-block mb-3">
+                <div class="absolute inset-[-3px] rounded-full bg-gradient-to-tr from-accent-blue via-accent-cyan to-accent-purple opacity-30 blur-[1px]"></div>
+                <div class="relative w-20 h-20 rounded-full border-[3px] border-black overflow-hidden bg-zinc-100">
+                    <img src="./amar.png" alt="N AMARNADH REDDY" class="w-full h-full object-cover">
+                </div>
+            </div>
+            
+            <h1 class="text-3xl font-black tracking-tighter uppercase mb-0 leading-none text-black">
+                N AMARNADH REDDY
+            </h1>
+            <p class="text-zinc-400 font-bold tracking-widest uppercase text-[10px]">
+                Founder & CRO
+            </p>
+        </header>
+
+        <!-- Contact Cards Section - Multi-Color Stack -->
+        <div class="flex-1 flex flex-col justify-center space-y-3" id="cards-container">
+            
+            <!-- Phone - Magenta -->
+            <a href="tel:9542710588" class="card-item block group">
+                <div class="bg-[#FF0080] text-white border-[3px] border-black rounded-none shadow-brutal p-3 relative overflow-hidden transition-all duration-200 active:translate-x-1 active:translate-y-1 active:shadow-none">
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <div class="w-1.5 h-1.5 bg-white/20"></div>
+                        <div class="w-1.5 h-1.5 bg-white/20"></div>
+                    </div>
+                    <div class="inline-block bg-black text-[8px] font-black px-2 py-0.5 mb-2 uppercase tracking-tighter">
+                        CONTACT // 01
+                    </div>
+                    <h2 class="text-2xl font-black leading-tight uppercase">PHONE</h2>
+                    <div class="flex items-center gap-2 mt-2">
+                        <span class="bg-black/20 text-[9px] font-bold px-2 py-0.5 rounded border border-white/30 uppercase">9542710588</span>
+                        <div class="w-2 h-2 rounded-full border-2 border-white ml-auto"></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Email - Blue -->
+            <a href="mailto:its.amarnadh123@gmail.com" class="card-item block group">
+                <div class="bg-[#3B82F6] text-white border-[3px] border-black rounded-none shadow-brutal p-3 relative overflow-hidden transition-all duration-200 active:translate-x-1 active:translate-y-1 active:shadow-none">
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <div class="w-1.5 h-1.5 bg-white/20"></div>
+                        <div class="w-1.5 h-1.5 bg-white/20"></div>
+                    </div>
+                    <div class="inline-block bg-black text-[8px] font-black px-2 py-0.5 mb-2 uppercase tracking-tighter">
+                        CONTACT // 02
+                    </div>
+                    <h2 class="text-2xl font-black leading-tight uppercase">EMAIL</h2>
+                    <div class="flex items-center gap-2 mt-2">
+                        <span class="bg-black/20 text-[9px] font-bold px-2 py-0.5 rounded border border-white/30 uppercase">SEND MESSAGE</span>
+                        <div class="w-2 h-2 rounded-full border-2 border-white ml-auto"></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- LinkedIn - Cyan -->
+            <a href="https://www.linkedin.com/in/n-amarnadh-reddy/" target="_blank" class="card-item block group">
+                <div class="bg-[#22D3EE] text-black border-[3px] border-black rounded-none shadow-brutal p-3 relative overflow-hidden transition-all duration-200 active:translate-x-1 active:translate-y-1 active:shadow-none">
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <div class="w-1.5 h-1.5 bg-black/10"></div>
+                        <div class="w-1.5 h-1.5 bg-black/10"></div>
+                    </div>
+                    <div class="inline-block bg-black text-[8px] font-black px-2 py-0.5 mb-2 uppercase tracking-tighter text-white">
+                        SOCIAL // 03
+                    </div>
+                    <h2 class="text-2xl font-black leading-tight uppercase">LINKEDIN</h2>
+                    <div class="flex items-center gap-2 mt-2">
+                        <span class="bg-black/10 text-[9px] font-bold px-2 py-0.5 rounded border border-black/30 uppercase">PROFESSIONAL</span>
+                        <div class="w-2 h-2 rounded-full border-2 border-black ml-auto"></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Portfolio - Lime -->
+            <a href="https://amar-portfolio-nine.vercel.app/" target="_blank" class="card-item block group">
+                <div class="bg-[#D9FF00] text-black border-[3px] border-black rounded-none shadow-brutal p-3 relative overflow-hidden transition-all duration-200 active:translate-x-1 active:translate-y-1 active:shadow-none">
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <div class="w-1.5 h-1.5 bg-black/10"></div>
+                        <div class="w-1.5 h-1.5 bg-black/10"></div>
+                    </div>
+                    <div class="inline-block bg-black text-[8px] font-black px-2 py-0.5 mb-2 uppercase tracking-tighter text-white">
+                        WORK // 04
+                    </div>
+                    <h2 class="text-2xl font-black leading-tight uppercase">PORTFOLIO</h2>
+                    <div class="flex items-center gap-2 mt-2">
+                        <span class="bg-black/10 text-[9px] font-bold px-2 py-0.5 rounded border border-black/30 uppercase">VIEW PROJECTS</span>
+                        <div class="w-2 h-2 rounded-full border-2 border-black ml-auto"></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Website - Orange -->
+            <a href="https://trovofi.in" target="_blank" class="card-item block group">
+                <div class="bg-[#F97316] text-white border-[3px] border-black rounded-none shadow-brutal p-3 relative overflow-hidden transition-all duration-200 active:translate-x-1 active:translate-y-1 active:shadow-none">
+                    <div class="absolute top-2 right-2 flex gap-1">
+                        <div class="w-1.5 h-1.5 bg-white/20"></div>
+                        <div class="w-1.5 h-1.5 bg-white/20"></div>
+                    </div>
+                    <div class="inline-block bg-black text-[8px] font-black px-2 py-0.5 mb-2 uppercase tracking-tighter">
+                        COMPANY // 05
+                    </div>
+                    <h2 class="text-2xl font-black leading-tight uppercase">WEBSITE</h2>
+                    <div class="flex items-center gap-2 mt-2">
+                        <span class="bg-black/20 text-[9px] font-bold px-2 py-0.5 rounded border border-white/30 uppercase">VISIT SITE</span>
+                        <div class="w-2 h-2 rounded-full border-2 border-white ml-auto"></div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- Compact Footer -->
+        <footer class="mt-6 text-center animate-slide-up" style="animation-delay: 0.6s">
+            <button id="vcard-btn" class="inline-flex items-center gap-2 bg-accent-lime text-black border-[2px] border-black rounded-none px-4 py-1.5 text-[10px] font-black uppercase tracking-tight shadow-brutal-sm active:shadow-none active:translate-x-0.5 active:translate-y-0.5 transition-all">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                SAVE CONTACT
+            </button>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

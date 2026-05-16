@@ -1,0 +1,92 @@
+/* style.css */
+
+:root {
+    --brutal-shadow: 4px 4px 0px 0px #000000;
+    --brutal-shadow-active: 0px 0px 0px 0px #000000;
+}
+
+body {
+    background: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaaaaa;
+}
+
+/* Staggered Entrance */
+.animate-slide-up {
+    animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Card Hover/Press States */
+.shadow-brutal {
+    box-shadow: var(--brutal-shadow);
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shadow-brutal-sm {
+    box-shadow: 4px 4px 0px 0px #000000;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.active\:shadow-brutal:active, 
+a:active .shadow-brutal,
+button:active .shadow-brutal {
+    box-shadow: var(--brutal-shadow-active) !important;
+    transform: translate(4px, 4px) !important;
+}
+
+/* Profile Image Glow Pulse */
+@keyframes glow-pulse {
+    0%, 100% { opacity: 0.6; filter: blur(2px); }
+    50% { opacity: 0.9; filter: blur(4px); }
+}
+
+.animate-glow-ring {
+    animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* Parallax Background Blobs */
+.parallax-blob {
+    transition: transform 0.1s ease-out;
+}
+
+/* Typography Enhancements */
+h1, h2 {
+    letter-spacing: -0.05em;
+}
+
+.font-condensed-italic {
+    font-style: italic;
+    font-weight: 800;
+    font-stretch: condensed;
+}
